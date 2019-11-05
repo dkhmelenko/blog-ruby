@@ -39,7 +39,15 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.4)
+    autoprefixer-rails (9.7.1)
+      execjs
+    bcrypt (3.1.13)
     bindex (0.8.1)
+    bootstrap-sass (3.4.1)
+      autoprefixer-rails (>= 5.2.1)
+      sassc (>= 2.0.0)
+    bootstrap-will_paginate (1.0.0)
+      will_paginate
     builder (3.2.3)
     byebug (11.0.1)
     coffee-rails (4.2.2)
@@ -121,6 +129,14 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
+    sassc (2.2.1)
+      ffi (~> 1.9)
+    sassc-rails (2.1.2)
+      railties (>= 4.0.0)
+      sassc (>= 2.0)
+      sprockets (> 3.0)
+      sprockets-rails
+      tilt
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -152,11 +168,15 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
+    will_paginate (3.1.5)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
+  bootstrap-sass (~> 3.4.1)
+  bootstrap-will_paginate (= 1.0.0)
   byebug
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
@@ -165,6 +185,7 @@ DEPENDENCIES
   puma (~> 3.0)
   rails (~> 5.0.2)
   sass-rails (~> 5.0)
+  sassc-rails (>= 2.1.0)
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (~> 1.3.6)
@@ -172,6 +193,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
+  will_paginate (= 3.1.5)
 
 BUNDLED WITH
-   2.0.1
+   2.0.2
